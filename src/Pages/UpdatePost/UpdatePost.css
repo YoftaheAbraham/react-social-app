@@ -1,0 +1,128 @@
+.UpdatePost {
+    padding-top: 4rem;
+    padding-left: 21rem;
+    display: flex;
+    background-color: #222222;
+    min-height: 100vh;
+}
+
+
+.UpdatePost .content {
+    padding: .8rem;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: start;
+    max-width: 50rem;
+    gap: 1rem;
+}
+
+.user-profile-pic {
+    display: flex;
+    align-items: end;
+}
+
+.user-profile-pic .profile-img {
+    padding: .2rem;
+    background: linear-gradient(45deg, rgb(17, 17, 17), rgb(163, 163, 163));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-profile-pic .profile-img img {
+    object-fit: cover;
+    width: 7rem;
+    height: 7rem;
+}
+
+.user-edit {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: .4rem;
+    background-color: #292929;
+}
+
+.user-profile-pic i {
+    padding: .7rem;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.027);
+    color: rgb(209, 124, 191);
+    cursor: pointer;
+    transition: .4s;
+}
+
+.user-profile-pic i:hover {
+    background-color: rgba(255, 255, 255, 0.226);
+}
+
+i.go-back {
+    padding: .4rem;
+    background-color: rgb(177, 14, 142);
+    color: #fff;
+    text-align: center;
+    max-width: 4rem;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.warn {
+
+    padding: .3rem;
+    background-color: rgba(133, 15, 15, 0.342);
+}
+
+.warn p {
+    color: rgb(247, 72, 72);
+}
+
+.user-profile-pic img {
+    width: 6rem;
+}
+
+textarea.Bio-Edit {
+    background-color: #00000059;
+    outline: none;
+    border: 1px solid #727272;
+    resize: none;
+    padding: .5rem;
+    color: rgb(160, 160, 160);
+    height: 8rem;
+}
+
+@media (max-width: 850px) {
+    .UpdatePost {
+        padding-left: 16rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .UpdatePost {
+        padding-left: 15rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .UpdatePost {
+        padding: 5rem 2rem;
+    }
+}
+
+@media (max-width: 470px) {
+
+    /* html{
+        font-size: 90%;
+    } */
+    .post .left img {
+        margin-top: .6rem;
+        width: 2rem;
+    }
+
+    .UpdatePost {
+        padding: 5rem .4rem;
+    }
+
+}

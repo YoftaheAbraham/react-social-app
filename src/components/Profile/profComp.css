@@ -1,0 +1,59 @@
+.profile-info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: red; */
+    max-width: 50rem;
+}
+.user-profile-pic img{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.Profile .content .user-info{
+    text-align: center;
+}
+.Profile .content .user-info span:first-child{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #fff;
+}
+.Profile .content .user-info span:last-child{
+    font-weight: 300;
+    font-size: .8rem;
+    color: rgb(177, 14, 142);
+}
+.Profile .content .user-responses{
+    padding: 1rem;
+}
+
+.Profile .content .user-bio{
+    text-align: center;
+    word-wrap: break-word;
+    max-width: 40rem;
+    color: #dbdbdb;
+}
+.Profile .content .user-numeric-info{
+    display: flex;
+    background-color: #171618f3;
+    margin-top: 1.6rem;
+    padding: 1rem;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+.Profile .content .user-numeric-info .numeric-info{
+    color: #fff;
+    padding: .5rem 1.5rem;
+    text-align: center;
+    border-right: 1px solid rgb(189, 189, 189);
+}
+.Profile .content .user-numeric-info .numeric-info:last-child{
+    padding: .5rem 1rem;
+    text-align: center;
+    border-right: none;
+}
+.Profile .content .user-numeric-info .numeric-info .value{
+    font-weight: 600;
+}

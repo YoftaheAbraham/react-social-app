@@ -1,0 +1,208 @@
+aside {
+    width: 20rem;
+    padding-top: 3rem;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: .9rem 3rem;
+    background-color: rgb(15, 1, 12);
+}
+
+.links a {
+    display: flex;
+    color: rgb(218, 218, 218);
+}
+
+aside .content {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 1;
+    max-width: 1600px;
+}
+
+aside .links {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+}
+
+aside .links a .link {
+    padding: .5rem;
+    flex: 1;
+    display: flex;
+    gap: .8rem;
+    border-radius: .5rem;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s;
+}
+
+aside .links a.active .link {
+    border: 1px solid #777777;
+    /* background-color: rgba(255, 255, 255, 0.082); */
+
+}
+
+aside .link i {
+    font-size: 1rem;
+}
+
+aside .main-link {
+    flex: 1;
+    display: flex;
+    gap: .8rem;
+    border-radius: .5rem;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn-link {
+    padding: .7rem;
+    background-color: rgb(91, 235, 115);
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+}
+.pop-up{
+    background-color: #292929;
+    padding: 1rem;
+}
+.pop-up button{
+    padding: .3rem;
+    margin: .2rem;
+}
+
+.link:hover {
+    background-color: rgba(63, 63, 63, 0.548);
+}
+
+.link img {
+    width: 1rem;
+    height: 1rem;
+}
+
+.link span {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.currentProfile {
+    padding: .4rem;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.currentProfile:hover {
+    background-color: rgba(102, 102, 102, 0.15);
+}
+
+.signin {
+    padding: .4rem;
+    background-color: transparent;
+    transition: .2s;
+    cursor: pointer;
+    border-radius: .2rem;
+    margin: .2rem 0;
+    border: none;
+}
+
+.signup {
+    cursor: pointer;
+    padding: .3rem;
+    border: none;
+    border-radius: .2rem;
+    background: rgb(158, 18, 135);
+    transition: .3s;
+}
+
+.sidebar-saved-number {
+    /* padding: .2rem .5rem; */
+    height: 1.3rem;
+    width: 1.3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+    background-color: rgba(255, 255, 255, 0.164);
+}
+
+.signup:hover {
+    background-color: rgba(158, 18, 135, 0.527);
+    border: none;
+}
+
+.signin:hover {
+    padding: .4rem;
+    background-color: rgba(148, 40, 190, 0.082);
+    border: none;
+}
+
+.signin p {
+    font-weight: 600;
+    color: rgb(148, 40, 190);
+}
+
+.currentProfile img.profileImage {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 3rem;
+    height: 3rem;
+}
+
+.current-user-info {
+    margin-left: 1rem;
+    display: flex;
+    gap: .3rem;
+    flex-direction: column;
+}
+
+.current-user-info span:first-child {
+    font-weight: 600;
+    color: #b9b9b9;
+}
+
+.current-user-info span:last-child {
+    font-weight: 300;
+    color: grey;
+}
+
+@media (max-width: 850px) {
+    aside {
+        width: 15rem;
+        padding: .9rem 1rem;
+    }
+
+    .currentProfile {
+        padding: 0;
+    }
+}
+
+/* @media (max-width: 850px) {
+    .Home {
+        padding-left: 16rem;
+    }
+} */
+
+@media (max-width: 750px) {
+    aside {
+        padding: .9rem 1rem;
+        width: 13rem;
+    }
+}
+
+@media (max-width: 650px) {
+    aside {
+        display: none;
+    }
+}

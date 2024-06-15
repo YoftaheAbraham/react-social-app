@@ -1,0 +1,28 @@
+.users{
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 50rem;
+    gap: .4rem;
+}
+
+.users .user{
+    display: flex;
+    gap: 1rem;
+    padding: .3rem;
+    border: 1px solid #5a5a5a;
+}
+.users .user .info{
+    word-break: break-all;
+}
+.user .info span{
+    font-size: .8rem;
+    font-weight: 100;
+    color: #a3a3a3;
+}
+.user .profile-img{
+    height: 3rem;
+    width: 3rem;
+    /* border-radius: 50%; */
+    object-fit: cover;
+}

@@ -1,0 +1,56 @@
+.comment-box {
+    padding: .5rem;
+    background-color: #171618f3;
+    margin-bottom: .5rem;
+    max-width: 50rem;
+    border-radius: .4rem;
+}
+
+.comment-box img {
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.comment-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.comment-heading .start{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.comment-heading b{
+    color: #fff;
+    font-weight: 700;
+}
+.commented-Account_name {
+    font-size: 1rem;
+    color: #fff;
+}
+.comment-content{
+    padding-top: 1rem;
+}
+.comment-text {
+    color: #b1b1b1;
+    word-wrap: break-word;
+}
+.information{
+    display: flex;
+    gap: .3rem;
+    padding: .7rem;
+    align-items: center;
+    color: #bebebe;
+}
+.information i{
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #b3b3b3;
+}
+.information span{
+    font-size: .1rem;
+}

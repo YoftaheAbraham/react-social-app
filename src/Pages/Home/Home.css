@@ -1,0 +1,80 @@
+.Home {
+    display: flex;
+    min-height: 100vh;
+    background-color: #171618f3;
+    padding-left: 21rem;
+    flex-direction: column;
+    padding-top: .4rem;
+    padding-bottom: 2rem;
+}
+
+.Home .body {
+    min-height: 100vh;
+    max-width: 43rem;
+}
+
+
+#LatestPosts {
+    padding-top: 2rem;
+}
+
+.Latest-post-title {
+    color: #fff;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+.Home .posts{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.show-more-btn-text{
+    color: rgb(233, 123, 227);
+    cursor: pointer;
+    padding: .4rem;
+    /* background-color: rgba(231, 68, 223, 0.164); */
+    max-width: 7rem;
+    transition: .2s;
+    border-radius: .2rem;
+}
+.show-more-btn-text:hover{
+    color: rgb(233, 123, 227);
+    cursor: pointer;
+    padding: .4rem;
+    background-color: rgba(231, 68, 223, 0.164);
+    max-width: 7rem;
+    border-radius: .2rem;
+}
+
+@media (max-width: 850px) {
+    .Home {
+        padding-left: 16rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .Home {
+        padding-left: 14rem;
+    }
+}
+@media (max-width: 650px) {
+    .Home{
+        padding: 1rem 2rem;
+    }
+    #create-post .left{
+        display: none;
+    }
+}
+@media (max-width: 470px) {
+    /* html{
+        font-size: 90%;
+    } */
+    .Home .posts .post .left img {
+        margin-top: .6rem;
+        width: 2rem;
+    }
+    .Home{
+        padding: 1rem .4rem 6rem .4rem;
+    }
+
+}

@@ -1,0 +1,127 @@
+.main {
+    min-height: 100vh;
+    padding: 1rem 2rem;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    background-color: #222222;
+}
+
+.container {
+    max-width: 50rem;
+    /* min-width: 20rem; */
+    padding: 1.2rem;
+    width: 100%;
+    background-color: #171618f3;
+    border: 1px solid #4b4b4b;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.app-info {
+    flex: 1;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(177, 14, 142);
+}
+
+h1 {
+    margin-top: 0;
+    font-weight: bold;
+    color: #bdbdbd;
+}
+
+label {
+    display: block;
+    margin-bottom: 3px;
+}
+
+label,
+p,
+b,
+span {
+    color: #d3d3d3;
+}
+
+.container b i{
+    margin:0 .5rem;
+}
+
+span.active {
+    color: rgb(177, 14, 142);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    background: #1f1e20f3;
+    border: 1px solid #696969;
+    color: #8d8d8d;
+    outline: none;
+}
+
+.container .error {
+    width: 100%;
+    background-color: #f443361f;
+    padding: .3rem;
+}
+.container .success {
+    width: 100%;
+    background-color: #6cf4361f;
+    padding: .3rem;
+}
+
+.container .error span {
+    color: #ff0000;
+}
+
+input[type="checkbox"] {
+    margin-bottom: 15px;
+}
+
+.signupbtn {
+    background-color: rgb(177, 14, 142);
+    color: #fff;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signupbtn:hover {
+    background-color: rgb(129, 10, 103);
+}
+
+.cancelbtn {
+    background-color: #f44336;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancelbtn:hover {
+    background-color: #e53935;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media (max-width: 900px) {
+    .main {
+        grid-template-columns: 1fr;
+        justify-content: start;
+        padding: 1rem;
+    }
+}
